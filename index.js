@@ -48,12 +48,34 @@ console.log("Total sum = ", sum)
 
 // PAGE 11
 
-// QUESTION 
+// QUESTION (a, b)
 
-const numberArray = [1,2,3,4,5,6,7,8,9,22,11,32,23,43,37,86,54,31,19]
+const numberArray = [1,2,3,4,5,6,7,8,9,22,11,32,23,43,37,86,54,31,19, 10,20,100]
 
 
 const oddSum =  numberArray.filter(num => num%2 !=0) 
 const evenSum = numberArray.filter(num => num%2==0)
 console.log("oddSum = ",oddSum.reduce((a,b) => a+b, 0))
 console.log("evensum = ",evenSum.reduce((a,b) => a+b, 0))
+
+// QUESTION (c)
+
+const max = Math.max(...numberArray)
+
+console.log("Largest number ",max)
+
+
+// QUESTION (d)
+
+const numDivBy10 = numberArray.filter(num => num%10 ==0)
+
+console.log(numDivBy10)
+
+
+// QUESTION (e)
+const OddPlusOneEvenMinusOne = numberArray.map((num) => num%2 == 0 ? num-1 : num + 1  )
+
+
+console.log(OddPlusOneEvenMinusOne)
+
+// QUESTION (f)
